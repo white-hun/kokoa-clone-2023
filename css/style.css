@@ -1,27 +1,73 @@
 @import url('https://fonts.googleapis.com/css2?family=Moon+Dance&display=swap');
+@import "reset.css";
+@import "status-bar.css";
+@import "variables.css";
+
 body {
     font-family: 'Abel', sans-serif;
 }
-.status-bar {
+
+.welcome-header {
+    margin: 90px 0px;
+    text-align: center;
     display: flex;
-    justify-content:center;
+    flex-direction:column;
+    align-items:center;
 }
-.status-bar__column {
-    width: 33%;
+.welcome-header__title {
+    margin-bottom: 40px;
+    font-size: 25px;
 }
-.status-bar__column:first-child span {
-    margin-right: 5px;
+.welcome-header__text {
+    width: 80%;
+    opacity: 0.7;
 }
-.status-bar__column:nth-child(2) {
-display:flex;
-justify-content:center;
-}
-.status-bar__column:nth-child(3) {
-align-items: center;
-display:flex;
-justify-content:flex-end;
-}
-.status-bar__column .fa-battery-ful {
-    margin: 0px 5px;
+.welcome-header__text2 {
+    width: 80%;
+    opacity: 0.7;
 }
 
+#login-form{
+    display:flex;
+    flex-direction: column;
+    margin: 0px 30px;
+}
+#login-form input {
+    border: none;
+    padding: 15px 0px;
+    font-size: 18px;
+    /* opacity: 0.5; */
+    margin-bottom: 10px;
+}
+
+#login-form input:not([type="submit"]) {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+    transition: border-color 0.3s ease-in-out;
+}
+
+#login-form input::placeholder {
+    color:rgba(0, 0, 0, 0.3)
+}
+
+#login-form input:focus {
+    border-color: var(--yellow);
+}
+
+#login-form input[type="submit"] {
+    cursor: pointer;
+    padding: 20px 0px;
+    border-radius: 5px;
+}
+
+#login-form input[type="submit"]:hover {
+    transition: background 0.4s ease-in-out;
+    background: var(--yellow);
+}
+
+#login-form a {
+    text-align: center;
+    text-decoration: none;
+    color:inherit;
+    font-size: 13px;
+    margin: 10px 0px;
+}
