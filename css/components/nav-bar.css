@@ -17,16 +17,6 @@
 	text-decoration: none;
 }
 .nav__notification {
-    background:tomato;
-    width: 20px;
-    height: 20px;
-    border-radius: 50%;
-    font-size: 12px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: white;
-    font-weight: 600;
     position: absolute;
     left: 15px;
     bottom: 10px;
