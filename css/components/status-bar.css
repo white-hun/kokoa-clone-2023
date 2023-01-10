@@ -12,6 +12,9 @@
 .status-bar__column {
     width: 33%;
 }
+.status-bar__column i {
+    margin-left: 2px;
+}
 .status-bar__column:first-child span {
     margin-right: 2px;
 }
