@@ -5,7 +5,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Welcome to kokoatalk</title>
+    <title>Friends - Kokoa Clone</title>
   </head>
   <body>
     <div class="status-bar">
@@ -22,19 +22,14 @@
         <i class="fa-solid fa-bolt"></i>
       </div>
     </div>
-    <header class="welcome-header">
-      <h1 class="welcome-header__title">Welcome to Kokoa Clone</h1>
-      <p class="welcome-header__text">If you have a Kokoa Account,</p>
-      <p class="welcome-header__text2">
-        log in with your email or phone number
-      </p>
-    </header>
-    <form action="friends.html" methid="get" id="login-form">
-      <input name="username" type="text" placeholder="Email or phone number" />
-      <input name="password" type="password" placeholder="password" />
-      <input type="submit" value="Log in" />
-      <a href="#">Find Kokoa Account or Password</a>
-    </form>
+    <nav class="nav">
+        <ul class="nav__list">
+            <li class="nav__btn"><a class="nav__link" href="friends.html"><i class="fa-regular fa-user fa-xl"></i></a></li>
+            <li class="nav__btn"><a class="nav__link" href="#"><i class="fa-regular fa-comment fa-xl"></i></a></li>
+            <li class="nav__btn"><a class="nav__link" href="#"><i class="fa-solid fa-magnifying-glass fa-xl"></i></a></li>
+            <li class="nav__btn"><a class="nav__link" href="#"><i class="fa-solid fa-ellipsis fa-xl"></i></a></li>
+        </ul>
+    </nav>
     <script
       src="https://kit.fontawesome.com/44d62889b1.js"
       crossorigin="anonymous"

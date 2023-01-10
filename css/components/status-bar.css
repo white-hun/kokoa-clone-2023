@@ -1,13 +1,19 @@
 .status-bar {
+    position: fixed;
+    top: 0;
+    width: 100%;
     display: flex;
     justify-content:center;
     padding: 5px 3px;
+    box-sizing: border-box;
+    background: white;
+    /* border-bottom: 1px solid rgba(0, 0, 0, 0.5); */
 }
 .status-bar__column {
     width: 33%;
 }
 .status-bar__column:first-child span {
-    margin-right: 5px;
+    margin-right: 2px;
 }
 .status-bar__column:nth-child(2) {
 display:flex;
@@ -17,7 +23,14 @@ justify-content:center;
 align-items: center;
 display:flex;
 justify-content:flex-end;
+margin: 0px 10px;
 }
 .status-bar__column .fa-battery-ful {
     margin: 0px 5px;
+}
+.welcome-header__text {
+    z-index: -1;
+}
+.welcome-header__text2 {
+    z-index: -1;
 }
