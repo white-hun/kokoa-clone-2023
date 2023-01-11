@@ -10,16 +10,18 @@
 @import "components/user-component.css";
 @import "components/badge.css";
 @import "components/icon-row.css";
+@import "components/alt-screen-header.css";
 
 /* Screens */
 @import "screens/login.css";
 @import "screens/friends.css";
 @import "screens/find.css";
 @import "screens/more.css";
+@import "screens/settting.css";
 
 body {
     font-family: 'Abel', sans-serif;
-    height: 1000vh;
+    height: 500vh;
     color: #2e363e;
 }
 .main-screen {

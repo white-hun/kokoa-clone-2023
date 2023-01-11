@@ -18,6 +18,18 @@
 .icon-row__under {
     display: flex;
     margin: 30px 0;
+    margin-left: 4px;
     justify-content: space-between;
     width: 44%;
+    
+}
+.test span{
+    display: flex;
+    align-items: center;
+}
+.test span:last-of-type {
+    margin-top: 0px;
+}
+.test span:first-of-type {
+    justify-content: center;
 }
