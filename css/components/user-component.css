@@ -37,7 +37,7 @@
     font-weight: 400;
 }
 .user-component__column:last-child {
-    color: rgba(0, 0, 0, 0.3);
+    color: var(--grey);
     display: flex;
     flex-direction: column;
     align-items: flex-end;
