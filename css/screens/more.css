@@ -1,0 +1,42 @@
+.more-screen .icon-row {
+    margin-top: 30px;
+}
+.more-suggestions {
+    margin-top: 50px;
+    margin-bottom: 40px;
+    font-weight: 600;
+    border-top: var(--main-border);
+    padding: 25px 0;
+}
+.more-suggestions__icons {
+    display: flex;
+    align-items: center;
+}
+.more-suggestions__icon {
+    margin-right: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.more-suggestions__icon-image2 {
+    width: 60px;
+    height: 60px;
+    background: var(--yellow);
+    border-radius: 10px;
+    border: 1px solid var(--yellow);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    margin-top: 20px;
+    margin-bottom: 15px;
+
+}
+.more-suggestions__icon-image1 img{
+    width: 60px;
+    height: 60px;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    margin-top: 20px;
+    margin-bottom: 15px;
+}

@@ -7,7 +7,7 @@
     padding: 5px 3px;
     box-sizing: border-box;
     background: white;
-    /* border-bottom: 1px solid rgba(0, 0, 0, 0.5); */
+    z-index: 999;
 }
 .status-bar__column {
     width: 33%;
@@ -16,7 +16,7 @@
     margin-left: 2px;
 }
 .status-bar__column:first-child span {
-    margin-right: 2px;
+    margin-right: 1px;
 }
 .status-bar__column:nth-child(2) {
 display:flex;
@@ -30,10 +30,4 @@ margin: 0px 10px;
 }
 .status-bar__column .fa-battery-ful {
     margin: 0px 5px;
-}
-.welcome-header__text {
-    z-index: -1;
-}
-.welcome-header__text2 {
-    z-index: -1;
 }
