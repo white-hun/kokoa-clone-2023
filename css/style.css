@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Moon+Dance&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Moon+Dance&display=swap");
 
 @import "reset.css";
 @import "variables.css";
@@ -20,15 +20,14 @@
 @import "screens/settting.css";
 @import "screens/chat.css";
 
-
 body {
-    font-family: 'Abel', sans-serif;
-    height: 200vh;
-    color: #2e363e;
+  font-family: "Abel", sans-serif;
+  height: 200vh;
+  color: #2e363e;
 }
 .main-screen {
-    padding: 0px var(--horizontal-space);
+  padding: 0px var(--horizontal-space);
 }
 a {
-    color: #2e363e;
+  color: #2e363e;
 }

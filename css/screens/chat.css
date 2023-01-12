@@ -1,31 +1,31 @@
 #chat-screen {
-    background: #abc1d1;
+  background: #abc1d1;
 }
 
 #chat-screen .alt-header,
 #chat-screen .status-bar {
-    background: #abc1d1;
-    top: 0;
-    position: fixed;
-    width: 100%;
-    box-sizing: border-box;
+  background: #abc1d1;
+  top: 0;
+  position: fixed;
+  width: 100%;
+  box-sizing: border-box;
 }
 #chat-screen .status-bar {
-    z-index: 2;
+  border-bottom: 1px solid rgba(59, 93, 118, 0.3);
+  z-index: 2;
 }
 #chat-screen .alt-header {
-    z-index: 1;
+  z-index: 1;
 }
 @keyframes fadeIn {
-    from {
-        transform: translateY(30px);
-        opacity: 0;
-    }
-    to {
-        transform:none;
-        opacity: 1;
-    }
-    
+  from {
+    transform: translateY(30px);
+    opacity: 0;
+  }
+  to {
+    transform: none;
+    opacity: 1;
+  }
 }
 
 /* #chat-screen .alt-header {
@@ -33,70 +33,65 @@
     채팅방 헤더와 스태큐바 고정이 동시에 안될 때
 } */
 .main-chat {
-    margin-top: 120px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    animation: fadeIn 0.5s linear;
-    
-    
+  margin-top: 120px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  animation: fadeIn 0.5s linear;
 }
 .chat__timestamp {
-    background: #92a4b2;
-    border-radius: 20px;
-    color: white;
-    padding: 10px 15px;
-    font-size: 15px;
-    margin-bottom: 25px;
+  background: #92a4b2;
+  border-radius: 20px;
+  color: white;
+  padding: 10px 15px;
+  font-size: 15px;
+  margin-bottom: 25px;
 }
 .message-row {
-    width: 100%;
-    display: flex;
-    margin-bottom: 25px;
+  width: 100%;
+  display: flex;
+  margin-bottom: 25px;
 }
-
 .message-row img {
-    width: 60px;
-    height: 60px;
-    border-radius: 40%;
-    margin-left: 20px;
-    margin-right: 10px;
+  width: 60px;
+  height: 60px;
+  border-radius: 40%;
+  margin-right: 10px;
 }
 .message__author {
-    font-weight: 600;
-    margin-bottom: 5px;
-    display: block;
-    justify-content: center;
+  font-weight: 600;
+  margin-bottom: 5px;
+  display: block;
+  justify-content: center;
 }
 .message__bubble {
-    background-color: white;
-    font-weight: 600;
-    padding: 12px;
-    border-radius: 15px;
-    border-top-left-radius: 0px;
-    margin-right: 5px;
+  background-color: white;
+  font-weight: 600;
+  padding: 12px;
+  border-radius: 15px;
+  border-top-left-radius: 0px;
+  margin-right: 5px;
 }
 .message__info {
-    display: flex;
-    align-items: flex-end;
+  display: flex;
+  align-items: flex-end;
 }
 .message__time,
 .message__author {
-    font-size: 13px;
-    opacity: 0.9;
+  font-size: 13px;
+  opacity: 0.9;
 }
 .message-row__own {
-    justify-content: flex-end;
-    margin-right: 25px;
+  justify-content: flex-end;
 }
 .message-row__own .message__bubble {
-    background-color: var(--yellow);
-    border-top-left-radius: 15px;
-    border-top-right-radius: 0px;
-    margin-left: 5px;
+  background-color: var(--yellow);
+  border-top-left-radius: 15px;
+  border-top-right-radius: 0px;
+  margin-left: 5px;
 }
 .message-row__own .message__info {
-    flex-direction: row-reverse;
+  flex-direction: row-reverse;
 }
 /* .message-row__own .message__bubble {
     order:1;
@@ -105,80 +100,80 @@
     order:0;
 } */
 .reply {
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-    background-color: white;
-    display: flex;
-    justify-content: space-between;
-    padding: 5px 25px;
-    box-sizing: border-box;
-    align-items: center;
-    transition: transform 0.4s ease-in-out;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background-color: white;
+  display: flex;
+  justify-content: space-between;
+  padding: 5px 25px;
+  box-sizing: border-box;
+  align-items: center;
+  transition: transform 0.4s ease-in-out;
 }
 .reply i {
-    opacity: 0.5;
+  opacity: 0.5;
 }
 .reply .reply__column:first-child {
-    width: 5%;
-    margin-left: -10px;
+  width: 5%;
+  margin-left: -10px;
 }
 .reply .reply__column:last-child {
-    width: 95%;
-    position: relative;
+  width: 95%;
+  position: relative;
 }
 .reply input {
-    padding: 10px;
-    width: 100%;
-    border: var(--main-border);
-    border-radius: 20px;
-    padding-left: 15px;
-    font-size: 15px;
-    box-sizing: border-box;
-    transition: all 0.4s ease-in-out;
+  padding: 10px;
+  width: 100%;
+  border: var(--main-border);
+  border-radius: 20px;
+  padding-left: 15px;
+  font-size: 15px;
+  box-sizing: border-box;
+  transition: all 0.4s ease-in-out;
 }
 .reply__column:last-child > i,
 .reply__column:last-child button {
-    position: absolute;
-    right: 6px;
-    top: 6px;
+  position: absolute;
+  right: 6px;
+  top: 6px;
 }
 .reply__column:last-child > i {
-    top: 21px;
-    right: 50px;
+  top: 21px;
+  right: 50px;
 }
 .reply__column button {
-    background-color: var(--yellow);
-    width: 30px;
-    height: 30px;
-    border: none;
-    border-radius: 50%;
-    font-size: 20px;
+  background-color: var(--yellow);
+  width: 30px;
+  height: 30px;
+  border: none;
+  border-radius: 50%;
+  font-size: 20px;
 }
-.reply__column button i{
-    opacity: 1;
+.reply__column button i {
+  opacity: 1;
 }
 .reply__ button:focus,
 .reply__ button:active {
-    outline: none;
+  outline: none;
 }
 .reply .reply__column:first-child,
 .reply .fa-face-smile-wink,
 .reply button {
-    transition: opacity 0.2s ease-in-out;
+  transition: opacity 0.2s ease-in-out;
 }
 
 .reply:focus-within .reply__column:first-child,
 .reply:focus-within .fa-face-smile-wink,
 .reply:focus-within button {
-    opacity: 0;
+  opacity: 0;
 }
 .reply input:focus {
-    width: 92vw;
-    transform: translateX(-7%) translateY(-80px);
+  width: 94vw;
+  transform: translateX(-7%) translateY(-80px);
 }
 .reply:focus-within {
-    transform: translateY(80px);
+  transform: translateY(80px);
 }
 
 /* @keyframes replyAnimation {
