@@ -110,7 +110,7 @@
         transform: none;
     }
     50% {
-        color: rgb(199, 52, 72);
+        color: #eb34a1;
         transform: scale(1.5);
     }
     100% {
