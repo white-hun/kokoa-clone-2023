@@ -8,7 +8,7 @@
   box-sizing: border-box;
   background-color: white;
   border-bottom: 0px;
-  z-index: 99;
+  z-index: 95;
 }
 .status-bar__column {
   width: 33%;

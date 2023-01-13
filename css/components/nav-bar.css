@@ -47,7 +47,7 @@
     left: 20px;
     bottom: 18px;
 }
-@keyframes appearBtnAnimation{
+@keyframes appearBtnAnimation {
     from {
         opacity: 0;
     }
@@ -69,3 +69,14 @@
 .nav__btn:last-child {
     animation-delay: 0.3s;
 }
+/* @keyframes scaleBtnAnimation {
+    from {
+        transform: none;
+    }
+    to {
+        transform: scale(1.2);
+    }
+}
+.nav__btn:hover {
+    animation: scaleBtnAnimation 0.3s linear forwards;
+} */
